@@ -8,7 +8,7 @@ function adicionarUsuario(nome, idade, email) {
     }
 
     if(idade > 0){
-        console.log("Sua idade é valida!")
+        console.log("Sua idade é valida")
     } else{
         console.log("Sua idade é inválida. Deve ser um número maior que zero!")
         return
@@ -16,6 +16,9 @@ function adicionarUsuario(nome, idade, email) {
 
     if(nome === undefined && email === undefined && email === undefined) {
         console.log("Todos os dados estão faltando.")
+        return
+    } else if(nome === undefined || email === undefined || email === undefined){
+        console.log("Há dados faltando.")
         return
     } else{
         usuarios.push(usuario)
