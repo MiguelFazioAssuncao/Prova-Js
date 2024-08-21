@@ -11,7 +11,7 @@ function adicionarUsuario(nome, idade, email) {
         usuarios.push(usuario)
         console.log(`Usuário ${nome} adicionado com sucesso!`)
     } else {
-        console.log("Idade inválida. Idade precisa ser um número positivo.")
+        console.log("Idade inválida.\nIdade precisa ser um número positivo.")
     }
     
     listarUsuarios(usuarios);
